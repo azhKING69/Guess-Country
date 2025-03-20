@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flag Guessing Game </title>
+    <link rel="shortcut icon" href="earth-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Guess the Country!</h1>
+    <div class="score-board">Your Score: <span id="score">0</span></div>
+    <div class="game-container" id="game">
+        <img id="flag" class="flag" src="" alt="Country Flag" />
+        <div class="options" id="options">
+            <!-- Options will be generated here -->
+        </div>
+        <div class="buttons">
+            <button id="endBtn">End</button>
+            <button id="nextBtn">Next</button>
+
+            <button id="restartBtn" style="display:none;">Restart</button>
+        </div>
+    </div>
+
+    <!-- Audio elements -->
+    <audio id="correctSound" src="/Correct.mp3"></audio>
+    <audio id="wrongSound" src="/wrong.mp3"></audio>
+    <audio id="clickSound" src="Click.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
