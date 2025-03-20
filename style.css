@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Lexend:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
+body {
+  background: #f0f4f8;
+  font-family: "Lexend", sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(https://media.istockphoto.com/id/121030085/photo/old-hand-drawn-vintage-world-map.jpg?s=612x612&w=0&k=20&c=iWZb55vCHFIFVHb7UzvPr8QSwllh82NFwrblxwaQXCU=);
+}
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+  background-color: #f0f4f841;
+  padding: 10px;
+
+}
+.score-board {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  background-color: #ffe209b9;
+  border: 4px solid #e57777;
+  padding: 10px 40px;
+  /* border-radius: 7px; */
+}
+.game-container {
+  background: #68bac6;
+  border: 5px solid #ffffff;
+  padding: 20px;
+  /* border-radius: 10px; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-height: 60vh;
+  max-width: 600px;
+  width: 90%;
+  animation: fadeIn 0.5s ease-in;
+}
+.flag {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  animation: zoomIn 0.6s ease-out;
+}
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 5px;
+}
+.option {
+  background: #e7eff6;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(63, 62, 62);
+  border: none;
+  border: 1px solid #377dde;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin: 5px;
+  cursor: pointer;
+  flex: 1 0 40%;
+  transition: background 0.3s;
+}
+.option:hover {
+  background: #d0e4f2;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+button {
+  background: #3e3e3e;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  color: #ffffff;
+  padding: 7px 15px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin: 5px;
+  min-width: 150px;
+
+}
+button:hover {
+  background: #45a044;
+}
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* Party popper animation */
+.party-popper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 3;
+}
+.party-popper span {
+  position: absolute;
+  font-size: 4rem;
+  animation: fall 2s linear forwards;
+  opacity: 0;
+  width: auto;
+}
+@keyframes fall {
+  0% {
+    transform: translateY(-100px) scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(500px) scale(1);
+    opacity: 0;
+  }
+}
+/* Wrong answer overlay */
+.wrong-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 0, 0, 0.3);
+  pointer-events: none;
+  z-index: 4;
+  animation: fadeOutOverlay 2s forwards;
+}
+
+@keyframes fadeOutOverlay {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
