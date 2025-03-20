@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(/bg.jpg);
+  background-image: url(https://media.istockphoto.com/id/121030085/photo/old-hand-drawn-vintage-world-map.jpg?s=612x612&w=0&k=20&c=iWZb55vCHFIFVHb7UzvPr8QSwllh82NFwrblxwaQXCU=);
 }
 h1 {
   color: #333;
